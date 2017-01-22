@@ -25,6 +25,8 @@
     <!-- Theme CSS -->
     <link href="css/creative.min.css" rel="stylesheet">
 
+    <link href="css/zero.css" rel="stylesheet">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -74,9 +76,20 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <header>
+    <header class="header-video">
+        <img src="#" class="header-video__media" data-video-URL="mp4/720.mp4" data-video-width="1280" data-video-height="720">
+        <div class="video-filter"></div>
         <div class="header-content">
+            
+            <!--<div style="position: fixed; z-index: -99; width: 100%; height: 100%">
+            <video id="vid" video autobuffer autoplay>
+                <source id="mp4" src="http://grochtdreis.de/fuer-jsfiddle/video/sintel_trailer-480.mp4" type="video/mp4">
+                </video>
+            </div>-->
+
             <div class="header-content-inner">
+                
+         
                 <h1 id="homeHeading">Zoom in... ON YOUR FACE!</h1>
                 <hr>
                 <p>More fun with friends!</p>
@@ -324,6 +337,7 @@
     <!-- Theme JavaScript -->
     <script src="js/creative.min.js"></script>
 
+    <script src="js/script.js"></script>
 </body>
 
 </html>
