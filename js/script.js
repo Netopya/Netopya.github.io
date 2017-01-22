@@ -44,12 +44,12 @@ HeaderVideo.prototype.setFluidContainer = function() {
 
 HeaderVideo.prototype.appendIframe = function() {
     var html = '<video id="vid" video autobuffer autoplay muted><source id="mp4" src="'+this.videoDetails.videoURL+'" type="video/mp4"></video>';
-    this.$element.children(':eq(0)').after(html);
+    this.$element.prepend(html);
 };
 
 $('.header-video').each(function(i, elem) {
     headerVideo = new HeaderVideo({
       element: elem,
-      media: '.header-video__media'
+      media: elem
     });
 });
